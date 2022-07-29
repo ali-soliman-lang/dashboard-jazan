@@ -1,0 +1,15 @@
+.btn:not(.btn-success) {
+  padding: 0 !important;
+  font-size: 1.2rem;
+  border: 0 !important;
+}
+
+input[type="number"] {
+  max-width: 50px;
+  text-align: center;
+}
+
+input[type="text"] {
+  max-width: 150px;
+  text-align: right;
+}

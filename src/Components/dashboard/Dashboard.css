@@ -1,0 +1,24 @@
+.dashboard-page .navbar-brand {
+  background-color: #61ce70;
+}
+
+.dashboard-page .exit-btn {
+  background-color: red;
+  color: #fff;
+}
+
+#sidebarMenu {
+  background-color: #032a2a !important;
+  height: 100vh !important;
+}
+
+.nav-item {
+  color: #fff;
+  padding: 0.7rem 0.5rem;
+  transition: 0.3 linear;
+}
+
+.nav-item.active,
+.nav-item:hover {
+  color: #61ce70;
+}
