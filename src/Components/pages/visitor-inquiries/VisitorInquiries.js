@@ -15,24 +15,20 @@ const VisitorInquiries = () => {
           Authorization: `Bearer ${token}`,
         },
       });
-
       const res = await data.json();
-      console.log(data);
-      console.log(res);
-
       setContacts(res.data);
     };
     contactsFun();
   }, [token]);
   return (
-    <div className="container">
+    <div className="container mt-5">
       <div className="row">
         {!contacts.length ? (
           <p>لا يوجد استفسارات</p>
         ) : (
           contacts.map((contactItem, ind) => (
-            <div className="col-12 col-md-4 border border-2" key={ind}>
-              <div>
+            <div className="col-12 col-md-4 " key={ind}>
+              <div className=" border border-2 p-3 ">
                 <p className="text-center">رقم: {contactItem.id}</p>
                 <p>الاسم: {contactItem.name}</p>
                 <p>الايميل: {contactItem.email}</p>
